@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<div id="tsparticles"></div>
+
   <!-- HEADER / PROFILE -->
   <header class="profile">
     <img src="assets/myimage.JPG" alt="Profile photo" class="profile-pic">
@@ -30,32 +32,65 @@
           </svg>
         </a>
       </div>
+
+      <div class="hero-buttons">
+  <a href="#about" class="btn view-btn">View More ↓</a>
+  <a href="resume.pdf" download class="btn resume-btn-hero">Download Resume</a>
+</div>
+
       
   </header>
 
   <!-- ABOUT -->
-  <section class="section">
+  <section class="section" id="about">
+
     <h2>About Me</h2>
     <p>
-      I’m a Software Tester who believes quality is built by breaking things early.
-      I enjoy finding edge cases, reporting meaningful bugs, and helping teams ship stable products.
+      Hi, I’m a QA Engineer who loves ensuring products work exactly the way users expect. 
+      From writing detailed test cases to automating workflows using Selenium and Appium, I focus on quality at every stage. 
+      I’m continuously learning new tools and technologies to grow as a tester and automation specialist.
     </p>
   </section>
 
   <!-- SKILLS -->
-  <section class="section">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li><span class="level critical">CRITICAL</span> Test Case Design</li>
-      <li><span class="level critical">CRITICAL</span> Bug Reporting</li>
-      <li><span class="level high">HIGH</span> Manual Testing</li>
-      <li><span class="level high">HIGH</span> API Testing (Postman)</li>
-      <li><span class="level medium">MEDIUM</span> Selenium / Automation</li>
-      <li><span class="level medium">MEDIUM</span> Jenkins / Git</li>
-    </ul>
-  </section>
+<section class="section">
+  <h2>Skills</h2>
 
-  <!-- EXPERIENCE -->
+  <div class="skills-final">
+
+    <div class="skill-group">
+      <h3>Testing Fundamentals</h3>
+      <p>
+        Test Case Design & Execution · Bug Reporting & Defect Lifecycle ·
+        Functional, Regression & Smoke Testing
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h3>Automation & Tools</h3>
+      <p>
+        Selenium (Web Automation) · Appium (Mobile Automation – Learning)
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h3>API & Backend Testing</h3>
+      <p>
+        API Testing using Postman · Request & Response Validation
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h3>DevOps & Version Control</h3>
+      <p>
+        Jenkins (CI/CD Basics) · Git & GitHub
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- EXPERIENCE
   <section class="section">
     <h2>Experience</h2>
 
@@ -67,36 +102,154 @@
         Actively involved in bug triaging and release validation.
       </p>
     </div>
-  </section>
+  </section> -->
 
-  <!-- PROJECTS -->
-  <section class="section">
-    <h2>Projects</h2>
+  <!-- EXPERIENCE -->
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2>Experience</h2>
 
-    <div class="card">
-      <h3>Activity Tracking App</h3>
-      <p class="muted">Role: QA Engineer</p>
-      <p>Status: <span class="fixed">FIXED ✔</span></p>
+  <div class="experience-line">
+
+    <div class="experience-item">
+      <h3>Software Test Engineer</h3>
+      <p class="muted">
+        Product-Based Company / Client Projects · Dec 2024 – Present
+      </p>
+
+      <p>
+        Started as a QA Intern and promoted to a full-time Software Test Engineer based on performance.
+        Worked on web and mobile applications, contributing to manual and automation testing,
+        API validation, regression testing, and release verification in real-time environments.
+      </p>
     </div>
 
-    <div class="card">
-      <h3>Rewards Redemption App</h3>
-      <p class="muted">Role: End-to-End Tester</p>
-      <p>Status: <span class="fixed">FIXED ✔</span></p>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- RESUME -->
-  <section class="section">
-    <h2>Resume</h2>
-    <a href="resume.pdf" download class="resume-btn">Download Resume</a>
-  </section>
+
+
+<!-- PROJECTS -->
+<section class="section">
+  <h2>Projects</h2>
+
+  <!-- Project 1 -->
+  <div class="project-line">
+    <div class="project-item">
+      <h3>
+        <a href="https://play.google.com/store/apps/details?id=com.kay.activity.app"
+           target="_blank" class="project-link">
+          Activity Tracking Mobile App ↗
+        </a>
+      </h3>
+      <p><span class="label">Type:</span> Mobile Application</p>
+      <p>
+        Worked on end-to-end testing of activity tracking features, covering functional,
+        regression, and API validation to ensure accurate real-time data reporting.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-line">
+    <div class="project-item">
+      <h3>
+        <a href="https://www.theeyefoundation.com/book-appointment"
+           target="_blank" class="project-link">
+          The Eye Foundation – Hospital Website ↗
+        </a>
+      </h3>
+      <p><span class="label">Type:</span> Web Application</p>
+      <p>
+        Developed and executed automation tests for appointment booking flows and
+        multiple form-based workflows. Performed regression testing to ensure
+        stability across frequent updates.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-line">
+    <div class="project-item">
+      <h3>
+        <a href="https://atpsgroup.com/"
+           target="_blank" class="project-link">
+          ATPS Group – E-commerce Website ↗
+        </a>
+      </h3>
+      <p><span class="label">Type:</span> Web Application</p>
+      <p>
+        Performed functional and regression testing on an e-commerce platform,
+        validating user journeys, forms, and overall production stability.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="project-line">
+    <div class="project-item">
+      <h3>Website Uptime Monitoring – Custom CI Pipeline</h3>
+      <p><span class="label">Type:</span> Automation / CI Project</p>
+      <p>
+        Designed and implemented a custom CI pipeline to monitor website availability
+        using Java-based tests. Integrated Jenkins on AWS EC2 with GitHub webhooks,
+        scheduled executions, and email alerts to notify failures in real time.
+      </p>
+      <p class="muted">
+        Tech: Java · JUnit · HTTP Client · Jenkins · GitHub · AWS EC2 · Amazon SES
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2>Contact</h2>
+
+  <p class="muted">
+    Interested in collaborating or discussing opportunities?  
+    Feel free to reach out.
+  </p>
+
+  <div class="contact-links">
+    <a href="mailto:your.email@example.com" class="contact-item">
+      📧 dineshkumar138143@gmail.com
+    </a>
+
+    <a href="https://www.linkedin.com/in/yourusername"
+       target="_blank" class="contact-item">
+      💼 LinkedIn
+    </a>
+
+    <a href="https://github.com/yourusername"
+       target="_blank" class="contact-item">
+      💻 GitHub
+    </a>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
-    © Tested in Chrome, Firefox, and real-world scenarios.
+    © Built, tested, and deployed by the engineer behind this portfolio.
   </footer>
 
   <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("tsparticles", {
+  particles: {
+    number: { value: 25 },
+    size: { value: 2 },
+    move: { enable: true, speed: 0.6 },
+    color: { value: "#22c55e" },
+    links: { enable: true, color: "#22c55e" }
+  }
+});
+</script>
+<!-- GO TO TOP BUTTON -->
+<button id="goTopBtn" aria-label="Go to top">↑</button>
+
 </body>
 </html>
